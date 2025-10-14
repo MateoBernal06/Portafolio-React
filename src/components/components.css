@@ -73,7 +73,6 @@ body{
 
 .place-button{
     text-align: center;
-    margin-bottom: 50px;
 }
 
 .downlader-cv{
@@ -95,6 +94,38 @@ body{
     background-color: rgb(252, 252, 130);
     color: rgba(1, 1, 1, 0.938);
     cursor: pointer;
+}
+
+
+/* Seccion Tecnology*/
+
+.place-tecnology{
+    margin: 80px 0px 80px 0px;
+}
+
+.tecnologys{
+    width: 800px;
+    height: auto;
+    margin: 0 auto;
+    background-color: rgba(86,86,90,0.126);
+    border-radius: 8px;
+    display: grid;
+    align-items: center;
+    padding: 20px;
+}
+
+.list-tecnology{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    justify-content: space-around;
+    object-fit: cover;
+}
+
+.tecno-imagen{
+    width: 80px;
+    height: 80px;
 }
 
 /* Styles projects */
