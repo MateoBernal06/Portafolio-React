@@ -1,11 +1,14 @@
 import mateo_bernal from '../picture/mateo_bernal.webp'
-import JS from '../../public/logo-js.webp'
-import Mongo from '../../public/logo-mongo.webp'
-import Css from '../../public/logo-css.webp'
-import Html from '../../public/logo-html.webp'
-import MySql from '../../public/logo-mysql.webp'
-import React from '../../public/logo-react.webp'
-import Node from '../../public/logo-node.webp'
+import { FaJsSquare } from "react-icons/fa";
+import { FaPython } from "react-icons/fa6";
+import { FaNodeJs } from "react-icons/fa";
+import { SiMongodb } from "react-icons/si";
+import { SiMysql } from "react-icons/si";
+import { FaHtml5 } from "react-icons/fa6";
+import { FaCss3Alt } from "react-icons/fa";
+import { FaReact } from "react-icons/fa6";
+import { LiaDownloadSolid } from "react-icons/lia"
+import { Button } from 'rsuite';
 
 export const About = () => {
     return(
@@ -23,7 +26,9 @@ export const About = () => {
                     conocimientos y habilidades adquiridos a lo largo de mi formación académica.
                 </p>
                 <div className='place-button'>
-                    <button className='downlader-cv'>Descargar CV</button>
+                    <Button color="yellow" appearance="primary" className='downlader-cv'>
+                        <LiaDownloadSolid size={25}/> Descargar CV
+                    </Button>
                 </div>
             </div>
             
@@ -32,25 +37,28 @@ export const About = () => {
                 <div className='tecnologys'>
                     <ul className='list-tecnology'>
                         <li className='tecno'>
-                            <img src={JS} alt="JavaScript" className='tecno-imagen'/>
+                            <FaJsSquare className='tecno-imagen' alt="JavaScript" title='JavaScript'/>
                         </li>
                         <li className='tecno'>
-                            <img src={Mongo} alt="MongoBD" className='tecno-imagen'/>
+                            <FaPython alt="Python" className='tecno-imagen' title='Python'/>
                         </li>
                         <li className='tecno'>
-                            <img src={MySql} alt="MySQL" className='tecno-imagen'/>
+                            <FaNodeJs alt="Node.JS" className='tecno-imagen' title='NodeJS'/>
                         </li>
                         <li className='tecno'>
-                            <img src={Html} alt="HTML" className='tecno-imagen'/>
+                            <SiMongodb alt="MongoBD" className='tecno-imagen' title='MongoBD'/>
                         </li>
                         <li className='tecno'>
-                            <img src={Css} alt="CSS" className='tecno-imagen'/>
+                            <SiMysql alt="MySQL" className='tecno-imagen' title='MySQL'/>
                         </li>
                         <li className='tecno'>
-                            <img src={Node} alt="Node.JS" className='tecno-imagen'/>
+                            <FaHtml5 alt="HTML" className='tecno-imagen' title='HTML'/>
                         </li>
                         <li className='tecno'>
-                            <img src={React} alt="React" className='tecno-imagen'/>
+                            <FaCss3Alt alt="CSS" className='tecno-imagen' title='CSS'/>
+                        </li>
+                        <li className='tecno'>
+                            <FaReact alt="React" className='tecno-imagen' title='React'/>
                         </li>
                     </ul>
                 </div>
