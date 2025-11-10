@@ -13,15 +13,12 @@ export const CardProjects = () => {
         const cargarDatos = async() =>{
             try {
                 const data = await obtenerProyectos()
-                if(!data){
-                    return setLoader(true)
-                }
                 setLoader(false)
                 setProyectos(data)
 
             } catch (error) {
                 console.log(`Se produjo un error inesperado: ${error.message}`)
-                return setLoader(true)
+                setLoader(true)
             }
         }
         cargarDatos()

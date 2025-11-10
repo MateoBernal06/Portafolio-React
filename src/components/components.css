@@ -1,5 +1,6 @@
 /* Styles Generales */
 @import 'rsuite/styles/index.less';
+@import 'bootstrap/dist/css/bootstrap.min.css';
 
 body{
     background-color: rgb(30, 30, 34);
@@ -109,6 +110,7 @@ body{
     display: grid;
     align-items: center;
     padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .list-tecnology{
@@ -118,11 +120,16 @@ body{
     padding: 0;
     justify-content: space-around;
     object-fit: cover;
+    text-align: center;
 }
 
 .tecno-imagen{
     width: 80px;
     height: 80px;
+}
+
+.tecno{
+    align-items: center;
 }
 
 /* Styles projects */
@@ -163,10 +170,48 @@ body{
 }
 
 .place-certificate{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    padding: 10px 0px 10px 0px;
+    padding: 10px;
     text-align: center;
-    gap: 15px;
 }
 
+
+/* Style Footer */
+
+.footer-place{
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    padding: 10px;
+}
+
+#javascript:hover{
+    color: yellow;
+}
+
+#css:hover{
+    color: rgba(60, 60, 242, 0.82);
+}
+
+#nodejs:hover{
+    color: greenyellow;
+}
+
+#mongodb:hover{
+    color: green;
+}
+
+#html:hover{
+    color: orange;
+}
+
+#react:hover{
+    color: aqua;
+}
+
+#mysql:hover{
+    color: darkkhaki;
+}
+
+#python:hover{
+    color: cadetblue;
+}

@@ -37,28 +37,36 @@ export const About = () => {
                 <div className='tecnologys'>
                     <ul className='list-tecnology'>
                         <li className='tecno'>
-                            <FaJsSquare className='tecno-imagen' alt="JavaScript" title='JavaScript'/>
+                            <FaJsSquare className='tecno-imagen' alt="JavaScript" id='javascript'/>
+                            <p>JavaScript</p>
                         </li>
                         <li className='tecno'>
-                            <FaPython alt="Python" className='tecno-imagen' title='Python'/>
+                            <FaPython alt="Python" className='tecno-imagen' id='python'/>
+                            <p>Python</p>
                         </li>
                         <li className='tecno'>
-                            <FaNodeJs alt="Node.JS" className='tecno-imagen' title='NodeJS'/>
+                            <FaNodeJs alt="Node.JS" className='tecno-imagen' id='nodejs'/>
+                            <p>NodeJS</p>
                         </li>
                         <li className='tecno'>
-                            <SiMongodb alt="MongoBD" className='tecno-imagen' title='MongoBD'/>
+                            <SiMongodb alt="MongoBD" className='tecno-imagen' id='mongodb'/>
+                            <p>MongoDB</p>
                         </li>
                         <li className='tecno'>
-                            <SiMysql alt="MySQL" className='tecno-imagen' title='MySQL'/>
+                            <SiMysql alt="MySQL" className='tecno-imagen' id='mysql'/>
+                            <p>MySQL</p>
                         </li>
                         <li className='tecno'>
-                            <FaHtml5 alt="HTML" className='tecno-imagen' title='HTML'/>
+                            <FaHtml5 alt="HTML" className='tecno-imagen' id='html'/>
+                            <p>HTML</p>
                         </li>
                         <li className='tecno'>
-                            <FaCss3Alt alt="CSS" className='tecno-imagen' title='CSS'/>
+                            <FaCss3Alt alt="CSS" className='tecno-imagen' id='css'/>
+                            <p>CSS</p>
                         </li>
                         <li className='tecno'>
-                            <FaReact alt="React" className='tecno-imagen' title='React'/>
+                            <FaReact alt="React" className='tecno-imagen' id='react'/>
+                            <p>React</p>
                         </li>
                     </ul>
                 </div>
