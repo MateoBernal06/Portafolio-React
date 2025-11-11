@@ -8,6 +8,8 @@ import { FaHtml5 } from "react-icons/fa6";
 import { FaCss3Alt } from "react-icons/fa";
 import { FaReact } from "react-icons/fa6";
 import { LiaDownloadSolid } from "react-icons/lia"
+import { FaGitAlt } from "react-icons/fa";
+import { SiExpress } from "react-icons/si";
 import { Button } from 'rsuite';
 
 export const About = () => {
@@ -35,40 +37,46 @@ export const About = () => {
             <div className='place-tecnology'>
                 <h1 className="title-projects">Tecnologías</h1>
                 <div className='tecnologys'>
-                    <ul className='list-tecnology'>
-                        <li className='tecno'>
-                            <FaJsSquare className='tecno-imagen' alt="JavaScript" id='javascript'/>
-                            <p>JavaScript</p>
-                        </li>
-                        <li className='tecno'>
-                            <FaPython alt="Python" className='tecno-imagen' id='python'/>
-                            <p>Python</p>
-                        </li>
-                        <li className='tecno'>
-                            <FaNodeJs alt="Node.JS" className='tecno-imagen' id='nodejs'/>
-                            <p>NodeJS</p>
-                        </li>
-                        <li className='tecno'>
-                            <SiMongodb alt="MongoBD" className='tecno-imagen' id='mongodb'/>
-                            <p>MongoDB</p>
-                        </li>
-                        <li className='tecno'>
-                            <SiMysql alt="MySQL" className='tecno-imagen' id='mysql'/>
-                            <p>MySQL</p>
-                        </li>
-                        <li className='tecno'>
-                            <FaHtml5 alt="HTML" className='tecno-imagen' id='html'/>
-                            <p>HTML</p>
-                        </li>
-                        <li className='tecno'>
-                            <FaCss3Alt alt="CSS" className='tecno-imagen' id='css'/>
-                            <p>CSS</p>
-                        </li>
-                        <li className='tecno'>
-                            <FaReact alt="React" className='tecno-imagen' id='react'/>
-                            <p>React</p>
-                        </li>
-                    </ul>
+                    <div className='tecno'>
+                        <FaJsSquare className='tecno-imagen' alt="JavaScript" id='javascript'/>
+                        <p>JavaScript</p>
+                    </div>
+                    <div className='tecno'>
+                        <FaPython alt="Python" className='tecno-imagen' id='python'/>
+                        <p>Python</p>
+                    </div>
+                    <div className='tecno'>
+                        <FaNodeJs alt="Node.JS" className='tecno-imagen' id='nodejs'/>
+                        <p>NodeJS</p>
+                    </div>
+                    <div className='tecno'>
+                        <SiMongodb alt="MongoBD" className='tecno-imagen' id='mongodb'/>
+                        <p>MongoDB</p>
+                    </div>
+                    <div className='tecno'>
+                        <SiMysql alt="MySQL" className='tecno-imagen' id='mysql'/>
+                        <p>MySQL</p>
+                    </div>
+                    <div className='tecno'>
+                        <FaHtml5 alt="HTML" className='tecno-imagen' id='html'/>
+                        <p>HTML</p>
+                    </div>
+                    <div className='tecno'>
+                        <FaCss3Alt alt="CSS" className='tecno-imagen' id='css'/>
+                        <p>CSS</p>
+                    </div>
+                    <div className='tecno'>
+                        <FaReact alt="React" className='tecno-imagen' id='react'/>
+                        <p>React</p>
+                    </div>
+                    <div className='tecno'>
+                        <FaGitAlt alt="Git" className='tecno-imagen' id='git'/>
+                        <p>Git</p>
+                    </div>
+                    <div className='tecno'>
+                        <SiExpress alt="Express" className='tecno-imagen' id='express'/>
+                        <p>Express</p>
+                    </div>
                 </div>
             </div>
         </>

@@ -105,23 +105,12 @@ body{
     width: 800px;
     height: auto;
     margin: 0 auto;
-    background-color: rgba(209, 209, 214, 0.126);
-    border-radius: 8px;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
     display: grid;
-    align-items: center;
-    padding: 20px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.list-tecnology{
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    justify-content: space-around;
-    object-fit: cover;
-    text-align: center;
-}
 
 .tecno-imagen{
     width: 80px;
@@ -130,6 +119,12 @@ body{
 
 .tecno{
     align-items: center;
+    background-color: rgba(209, 209, 214, 0.126);
+    padding: 15px;
+    justify-content: center;
+    display: grid;
+    text-align: center;
+    border-radius: 10px;
 }
 
 /* Styles projects */
@@ -175,6 +170,63 @@ body{
 }
 
 
+/* Style Contact */
+
+.place-contact{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin: 5px 0px 40px 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.place-email{
+    background-color: rgba(209, 209, 214, 0.126);
+    border-radius: 10px;
+}
+
+.input-form{
+    display: grid;
+    margin: 20px;
+    gap: 4px;
+}
+
+.input{
+    color: black;
+    padding: 5px 10px 5px 10px;
+    border-radius: 5px;
+    border-color: rgba(209, 209, 214, 0.126);
+}
+
+.button-send{
+    gap: 5px;
+    font-size: 17px;
+}
+
+.button-contact{
+    width: 150px;
+    gap: 5px;
+    font-size: 17px;
+    height: 40px;
+}
+
+.place-elements-contact{
+    display: flex;
+    font-size: 17px;
+    margin: 0 auto;
+    padding: 0;
+    gap: 8px;
+    align-items: center;
+}
+
+.list-contact{
+    gap: 20px;
+    display: grid;
+    align-items: center;
+    height: 300px;
+}
+
+
 /* Style Footer */
 
 .footer-place{
@@ -189,7 +241,7 @@ body{
 }
 
 #css:hover{
-    color: rgba(60, 60, 242, 0.82);
+    color: rgba(34, 151, 224, 0.82);
 }
 
 #nodejs:hover{
@@ -214,4 +266,12 @@ body{
 
 #python:hover{
     color: cadetblue;
+}
+
+#git:hover{
+    color: rgb(235, 94, 6);
+}
+
+#express:hover{
+    color: rgb(0, 0, 0);
 }
