@@ -29,7 +29,31 @@ const obtenerCertificados = async() => {
     }
 }
 
+const mandarMensaje = async(dataEmail) => {
+    try {
+        const url = await fetch(`${import.meta.env.VITE_LINK_API}/enviar-email`, {
+            method : 'POST',
+            headers : {
+                'Content-Type':'application/json'
+            },
+            body : JSON.stringify(dataEmail)
+        })
+
+        if(!url.ok){
+            throw Error(`Error Status ${url.status}`);
+        }
+
+        const data = await url.json()
+        console.log(data)
+
+    } catch (error) {
+        console.log(error);
+        return [];
+    }
+}
+
 export {
     obtenerProyectos,
-    obtenerCertificados
+    obtenerCertificados,
+    mandarMensaje
 }

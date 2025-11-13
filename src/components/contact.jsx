@@ -8,19 +8,24 @@ import { FaLocationDot } from "react-icons/fa6";
 
 const Contact = () => {
     return(
-        <div className='about'>
+        <div className='about' id='my-contact'>
             <h1 className="title-projects" >Contacto</h1>
             <div className='place-contact'>
                 <div className='list-contact'>
+                    <p className='msg-contact'>Te puedes poner en contacto conmigo por los siguientes medios 🫡</p>
                     <div className='place-elements-contact'>
-                        <Button className='button-contact'>
-                            <IoLogoGithub size={20}/>GitHub
-                        </Button>
+                        <a href="https://github.com/MateoBernal06" target="_blank">
+                            <Button className='button-contact'>
+                                <IoLogoGithub size={20}/>GitHub
+                            </Button>
+                        </a>
                     </div>
                     <div className='place-elements-contact'>
-                        <Button className='button-contact'>
-                            <FaLinkedin size={20}/>Linkedin
-                        </Button>
+                        <a href="https://www.linkedin.com/in/jose-mateo-bernal/" target="_blank">
+                            <Button className='button-contact'>
+                                <FaLinkedin size={20}/>Linkedin
+                            </Button>
+                        </a>
                     </div>
                     <div className='place-elements-contact'>
                         <p> <MdEmail size={20}/> bernalmateo64@gmail.com</p>
@@ -33,15 +38,19 @@ const Contact = () => {
                     <form action="">
                         <div className='input-form'>
                             <label htmlFor="">Nombre</label>
-                            <input type="text" className='input'/>
+                            <input type="text" className='input' required />
+                        </div>
+                        <div className='input-form'>
+                            <label htmlFor="">Motivo</label>
+                            <input type="text" className='input' required />
                         </div>
                         <div className='input-form'>
                             <label htmlFor="">Correo</label>
-                            <input type="email" className='input'/>
+                            <input type="email" className='input' required />
                         </div>
                         <div className='input-form'>
                             <label htmlFor="">Contenido del mensaje</label>
-                            <textarea type="email" className='input'/>
+                            <textarea type="email" className='input' required/>
                         </div>
                         <div className='input-form'>
                             <Button color='green' appearance='primary' className='button-send'>

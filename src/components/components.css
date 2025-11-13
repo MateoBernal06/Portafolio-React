@@ -38,6 +38,10 @@ body{
     cursor: pointer;
 }
 
+.options-bar li a {
+    color: white;
+}
+
 .options-bar li:hover{
     color: aqua;
 }
@@ -49,12 +53,30 @@ body{
     text-align: justify;
 }
 
-.my-name{
-    margin-top: 50px;
+.my-name {
+    width: 30ch;
     text-align: center;
+    white-space: nowrap;
     font-size: 1.5rem;
+    overflow: hidden;
+    margin: 0 auto;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-style: italic;
+    animation: typing 5s steps(50) infinite alternate-reverse;
+}
+
+.my-name{
+    margin-top: 50px;
+}
+
+@keyframes typing {
+    from {
+        width: 0ch;
+    }
+
+    to {
+        width: 30ch;
+    }
 }
 
 .about-me{
@@ -175,8 +197,8 @@ body{
 .place-contact{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
-    margin: 5px 0px 40px 0px;
+    gap: 70px;
+    margin: 5px 0px 50px 0px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -213,19 +235,19 @@ body{
 .place-elements-contact{
     display: flex;
     font-size: 17px;
-    margin: 0 auto;
-    padding: 0;
     gap: 8px;
-    align-items: center;
+    padding: 10px;
 }
 
 .list-contact{
-    gap: 20px;
     display: grid;
-    align-items: center;
     height: 300px;
 }
 
+.msg-contact{
+    font-size: 20px;
+    margin-bottom: 30px;
+}
 
 /* Style Footer */
 

@@ -10,16 +10,24 @@ export const Head = () => {
                 <nav className="bar-actions">
                     <ul className="options-bar">
                         <li>
-                            <AiOutlineUser size={25} title="Sobre Mi"/>
+                            <a href="">
+                                <AiOutlineUser size={25} title="Sobre Mi"/>
+                            </a>
                         </li>
                         <li>
-                            <PiBackpack size={25} title="Proyectos"/>
+                            <a href="#my-projects">
+                                <PiBackpack size={25} title="Proyectos"/>
+                            </a>
                         </li>
                         <li>
-                            <TbCertificate size={25} title="Certificados"/>
+                            <a href="#my-certificates">
+                                <TbCertificate size={25} title="Certificados"/>
+                            </a>
                         </li>
                         <li>
-                            <MdOutlinePhone size={25} title="Contacto"/>
+                            <a href="#my-contact">
+                                <MdOutlinePhone size={25} title="Contacto"/>
+                            </a>
                         </li>
                     </ul>
                 </nav>

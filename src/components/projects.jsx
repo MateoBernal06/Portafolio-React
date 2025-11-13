@@ -3,7 +3,7 @@ import { Button } from 'rsuite';
 
 export const Projects = () => {
     return(
-        <div className="projects">
+        <div className="projects" id="my-projects">
             <h1 className="title-projects" >Proyectos Desarrollados</h1>
             <div className="place-projects">
                 <CardProjects></CardProjects>
