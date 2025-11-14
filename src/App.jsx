@@ -5,6 +5,9 @@ import { Certificate } from "./components/certificate.jsx"
 import { Footer } from "./components/footer.jsx"
 import { Contact } from "./components/contact.jsx"
 import './components/components.css'
+import { ToastContainer } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css';
+
 
 const App = () => {
   return (
@@ -15,6 +18,7 @@ const App = () => {
       <Certificate/>
       <Contact/>
       <Footer/>
+      <ToastContainer/>
     </div>
   )
 }

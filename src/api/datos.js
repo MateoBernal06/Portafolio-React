@@ -38,17 +38,27 @@ const mandarMensaje = async(dataEmail) => {
             },
             body : JSON.stringify(dataEmail)
         })
-
+        
+        const data = await url.json()
+        
         if(!url.ok){
-            throw Error(`Error Status ${url.status}`);
+            return { 
+                ok: false, 
+                msg: data.msg || `Error ${url.status}` 
+            };
         }
 
-        const data = await url.json()
-        console.log(data)
+        return { 
+                ok: true, 
+                msg: data.msg || "Mensaje enviado correctamente" 
+            };
 
     } catch (error) {
         console.log(error);
-        return [];
+        return { 
+            ok: false, 
+            msg: "Error al conectarse con el servidor" 
+        };
     }
 }
 
