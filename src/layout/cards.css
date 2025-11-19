@@ -138,3 +138,67 @@
     width: 500px;
     margin: 0 auto;
 }
+
+@media (max-width: 768px) {
+    
+    .curso-place-carousel{
+        width: 300px;
+        margin: 0 auto;
+    }
+
+    .info-course{
+        width: 200px;
+        margin: 0 auto;
+        font-size: 10px;
+    }
+
+    .imagen-curso{
+        height: 250px;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .card-projects {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        height: 600px;
+        width: 300px;
+    }
+
+    .project-imagen {
+        width: 300px;
+    }
+
+    .project-description{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        font-size: 12px;
+        width: 100%;
+    }
+
+    .title-project{
+        height: 20px;
+        font-size: 15px;
+    }
+
+    .body-project{
+        padding: 8px;
+        height: auto;
+    }
+
+    .description-db{
+        font-size: 15px;
+    }
+
+    .imagen-pro {
+        object-fit: cover;
+        border-radius: 8px 8px 0px 0px;
+        height: 200px;
+        width: 100%;
+    }
+
+    .tecno-project{
+        height: auto;
+        padding: 8px;
+    }
+}

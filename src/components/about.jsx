@@ -29,7 +29,7 @@ export const About = () => {
                 </p>
                 <div className='place-button'>
                     <Button color="yellow" appearance="primary" className='downlader-cv'>
-                        <LiaDownloadSolid size={25}/> Descargar CV
+                        <LiaDownloadSolid size={25} className='icon-download'/> Descargar CV
                     </Button>
                 </div>
             </div>
