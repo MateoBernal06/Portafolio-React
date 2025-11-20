@@ -302,8 +302,90 @@ body{
 
 @media (min-width: 769px) and (max-width: 1024px){
     
-    body {
-        background-color: rgb(255, 0, 0);
+    .bar-actions {
+        width: 400px;
+    }
+
+    .title-project,
+    .input-form,
+    .footer-place,
+    .place-elements-contact {
+        font-size: 16px;
+    }
+
+    .about,.tecnologys,.projects,.certificate {
+        width: auto;
+        padding: 20px;
+    }
+
+    .my-name {
+        font-size: 20px;
+        margin-top: 15px;
+    }
+
+    .downlader-cv {
+        font-size: 16px;
+        height: auto;
+    }
+
+    .tecnologys {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 10px;
+        padding: 0px 40px 0px 40px;
+        width: 800px;
+    }
+    
+    .tecno-imagen {
+        width: 60px;
+        height: 60px;
+    }
+
+    .tecno {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        font-size: 17px;
+    }
+
+    .about-me {
+        font-size: 20px;
+        padding: 10px;
+    }
+
+    .place-projects{
+        margin: 0 auto;
+    }
+
+    .projects {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+    }
+
+    .place-contact {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 70px;
+        margin: 0 auto;
+        padding: 8px;
+        width: 800px;
+    }
+
+    .place-elements-contact {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    .msg-contact {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .place-email{
+        width: 400px;
+        margin: 0 auto;
     }
 }
 
@@ -339,10 +421,6 @@ body{
         height: 150px;
     }
 
-    .downlader-cv{
-        height: 40px;
-        width: auto;
-    }
 
     .tecnologys{
         display: grid;
@@ -400,6 +478,10 @@ body{
     .downlader-cv{
         font-size: 12px;
         height: auto;
+    }
+
+    .place-certificate{
+        width: 800px;
     }
 
 }

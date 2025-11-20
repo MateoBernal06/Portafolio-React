@@ -202,3 +202,19 @@
         padding: 8px;
     }
 }
+
+@media (min-width: 769px) and (max-width: 1024px) {
+
+    .card-projects {
+        width: 750px;
+    }
+
+    .curso-place-carousel {
+        width: 700px;
+        margin: 0 auto;
+    }
+
+    .project-imagen {
+        width: 200px;
+    }
+}
