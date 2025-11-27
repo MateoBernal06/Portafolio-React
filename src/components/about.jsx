@@ -11,6 +11,7 @@ import { LiaDownloadSolid } from "react-icons/lia"
 import { FaGitAlt } from "react-icons/fa";
 import { SiExpress } from "react-icons/si";
 import { Button } from 'rsuite';
+import cvPDF from '../archives/MateoBernal_cv.pdf'
 
 export const About = () => {
     return(
@@ -27,7 +28,7 @@ export const About = () => {
                     entorno profesional, contribuyendo al éxito de los objetivos de la organización.
                 </p>
                 <div className='place-button'>
-                    <a download="MateoBernal_cv" href="../archives/MateoBernal_cv.pdf">
+                    <a download="MateoBernal_cv" href={cvPDF}>
                         <Button color="yellow" appearance="primary" className='downlader-cv'>
                             <LiaDownloadSolid size={25} className='icon-download'/> Descargar CV
                         </Button>
