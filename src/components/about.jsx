@@ -15,7 +15,7 @@ import { Button } from 'rsuite';
 export const About = () => {
     return(
         <>
-            <div className="about">
+            <div className="about" id='my-about'>
                 <p className='my-name'>Hola, soy Mateo Bernal</p>
                 <div className='place-picture'>
                     <img className='picture-me' src={mateo_bernal} alt="" />
