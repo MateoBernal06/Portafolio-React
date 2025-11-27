@@ -21,16 +21,17 @@ export const About = () => {
                     <img className='picture-me' src={mateo_bernal} alt="" />
                 </div>
                 <p className="about-me">
-                    Actualmente me encuentro en proceso de titulación en la carrera de 
-                    Desarrollo de Software en la Escuela Politécnica Nacional (EPN). Poseo 
-                    experiencia en el desarrollo de proyectos académicos y ahora busco ampliar 
-                    mi experiencia en un entorno profesional, con el fin de fortalecer los 
-                    conocimientos y habilidades adquiridos a lo largo de mi formación académica.
+                    Soy graduado de la carrera de Desarrollo de Software en la Escuela Politécnica Nacional. 
+                    Cuento con experiencia en el desarrollo de proyectos académicos y personales, y 
+                    estoy motivado por la oportunidad de aplicar mis conocimientos y habilidades en un 
+                    entorno profesional, contribuyendo al éxito de los objetivos de la organización.
                 </p>
                 <div className='place-button'>
-                    <Button color="yellow" appearance="primary" className='downlader-cv'>
-                        <LiaDownloadSolid size={25} className='icon-download'/> Descargar CV
-                    </Button>
+                    <a download="MateoBernal_cv" href="../archives/MateoBernal_cv.pdf">
+                        <Button color="yellow" appearance="primary" className='downlader-cv'>
+                            <LiaDownloadSolid size={25} className='icon-download'/> Descargar CV
+                        </Button>
+                    </a>
                 </div>
             </div>
             
