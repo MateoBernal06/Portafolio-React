@@ -7,7 +7,7 @@ import { SiMysql } from "react-icons/si";
 import { FaHtml5 } from "react-icons/fa6";
 import { FaCss3Alt } from "react-icons/fa";
 import { FaReact } from "react-icons/fa6";
-import { LiaDownloadSolid } from "react-icons/lia"
+import { FaFileDownload } from "react-icons/fa";
 import { FaGitAlt } from "react-icons/fa";
 import { SiExpress } from "react-icons/si";
 import { Button } from 'rsuite';
@@ -17,7 +17,7 @@ export const About = () => {
     return(
         <>
             <div className="about" id='my-about'>
-                <p className='my-name'>Hola, soy Mateo Bernal</p>
+                <p className='my-name'>Hola, soy Jose Mateo Bernal</p>
                 <div className='place-picture'>
                     <img className='picture-me' src={mateo_bernal} alt="" />
                 </div>
@@ -30,7 +30,7 @@ export const About = () => {
                 <div className='place-button'>
                     <a download="MateoBernal_cv" href={cvPDF}>
                         <Button color="yellow" appearance="primary" className='downlader-cv'>
-                            <LiaDownloadSolid size={25} className='icon-download'/> Descargar CV
+                            <FaFileDownload size={20} className='icon-download'/> Descargar CV
                         </Button>
                     </a>
                 </div>

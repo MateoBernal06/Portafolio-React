@@ -117,6 +117,7 @@ body{
     height: 40px;
     padding: 5px 15px 5px 15px;
     align-items: center;
+    gap: 8px;
     font-size: 1.1rem;
     color: black;
     border-radius: 8px;
@@ -125,6 +126,7 @@ body{
 
 .downlader-cv:hover{
     cursor: pointer;
+    background-color: rgba(255, 255, 0, 0.502);
 }
 
 
@@ -247,6 +249,7 @@ body{
     font-size: 17px;
     gap: 8px;
     padding: 10px;
+    justify-content: center;
 }
 
 .list-contact{
@@ -257,6 +260,21 @@ body{
 .msg-contact{
     font-size: 20px;
     margin-bottom: 30px;
+}
+
+#whapsapp-button:hover{
+    background-color: rgb(80, 187, 126);
+    color: white;
+}
+
+#linkedin-button:hover{
+    background-color: rgb(0, 119, 181);
+    color: white;
+}
+
+#github-button:hover{
+    background-color: rgb(6, 6, 6);
+    color: white;
 }
 
 /* Style Footer */
