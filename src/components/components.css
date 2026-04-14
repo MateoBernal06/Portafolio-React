@@ -7,6 +7,9 @@ body{
     color: white;
 }
 
+html {
+    scroll-behavior: smooth;
+}
 
 /* Styles de Bar */
 .bar{
@@ -249,7 +252,7 @@ body{
     font-size: 17px;
     gap: 8px;
     padding: 10px;
-    justify-content: center;
+    justify-content: left;
 }
 
 .list-contact{
@@ -260,6 +263,7 @@ body{
 .msg-contact{
     font-size: 20px;
     margin-bottom: 30px;
+    text-align: left;
 }
 
 #whapsapp-button:hover{
