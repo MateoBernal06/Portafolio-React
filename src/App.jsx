@@ -1,7 +1,7 @@
 import 'rsuite/styles/index.less';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-import { Head } from "./components/Head.jsx";
+import { Head } from "./components/Head.jsx"
 import { About } from "./components/About.jsx";
 import { Projects } from "./components/Projects.jsx";
 import { Certificate } from "./components/Certificate.jsx";
@@ -14,7 +14,7 @@ import "react-toastify/dist/ReactToastify.css";
 
 const App = () => {
   return (
-    <>
+    <div className="App">
       <Head />
       <About />
       <Experience />
@@ -23,7 +23,7 @@ const App = () => {
       <Contact />
       <Footer />
       <ToastContainer />
-    </>
+    </div>
   );
 };
 
