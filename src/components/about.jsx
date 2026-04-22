@@ -7,13 +7,23 @@ import { SiMysql } from "react-icons/si";
 import { FaHtml5 } from "react-icons/fa6";
 import { FaCss3Alt } from "react-icons/fa";
 import { FaReact } from "react-icons/fa6";
-import { FaFileDownload } from "react-icons/fa";
+import { MdOutlineFileDownload } from "react-icons/md";
 import { FaGitAlt } from "react-icons/fa";
 import { SiExpress } from "react-icons/si";
 import { Button } from "rsuite";
 import cvPDF from "../archives/MateoBernal_cv.pdf";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 export const About = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: true,
+    });
+  }, []);
+
   return (
     <>
       <div className="about" id="my-about">
@@ -35,8 +45,8 @@ export const About = () => {
               appearance="primary"
               className="downlader-cv"
             >
-              <FaFileDownload size={20} className="icon-download" /> Descargar
-              CV
+              Descargar CV
+              <MdOutlineFileDownload size={24} />{" "}
             </Button>
           </a>
         </div>
@@ -44,7 +54,7 @@ export const About = () => {
 
       <div className="place-tecnology">
         <h1 className="title-projects">Tecnologías</h1>
-        <div className="tecnologys">
+        <div className="tecnologys" data-aos="zoom-in">
           <div className="tecno">
             <FaJsSquare
               className="tecno-imagen"

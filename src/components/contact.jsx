@@ -85,7 +85,7 @@ const Contact = () => {
       <div className="place-contact">
         <div className="list-contact">
           <p className="msg-contact">
-            Puedes contactarme a través de los siguientes medios: 
+            Puedes contactarme a través de los siguientes medios:
           </p>
           <div className="place-elements-contact">
             <a href="https://wa.me/593995389340" target="_blank">
@@ -169,12 +169,12 @@ const Contact = () => {
             </div>
             <div className="input-form">
               <Button
-                color="green"
+                color="yellow"
                 appearance="primary"
                 className="button-send"
                 type="submit"
               >
-                <RiMailSendFill size={20} /> Enviar
+                Enviar
               </Button>
             </div>
           </form>

@@ -54,19 +54,31 @@ export const CardProjects = () => {
                   ))}
                 </ul>
                 <div className="links-project">
-                  <a href={proyecto.github} target="_blank">
+                  <a
+                    href={proyecto.github}
+                    target="_blank"
+                    className="link-github"
+                  >
                     <Button
-                      color=""
+                      color="cyan"
                       appearance="ghost"
                       className="button-github"
                     >
-                      <FaGithub size={20}></FaGithub> GitHub
+                      <FaGithub size={20}></FaGithub> Codigo
                     </Button>
                   </a>
                   {proyecto.link ? (
-                    <a href={proyecto.link} target="_blank">
-                      <Button appearance="ghost" className="button-web">
-                        <TbWorld size={20}></TbWorld> Enlace
+                    <a
+                      href={proyecto.link}
+                      target="_blank"
+                      className="link-web"
+                    >
+                      <Button
+                        appearance="ghost"
+                        className="button-web"
+                        color="cyan"
+                      >
+                        <TbWorld size={20}></TbWorld> Demo
                       </Button>
                     </a>
                   ) : (

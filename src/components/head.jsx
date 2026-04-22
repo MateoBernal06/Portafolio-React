@@ -11,7 +11,7 @@ export const Head = () => {
           <ul className="options-bar">
             <li>
               <a href="#">
-                <AiOutlineUser size={25} title="Sobre Mi" />
+                <AiOutlineUser size={25} title="Sobre Mi" /> 
               </a>
             </li>
             <li>

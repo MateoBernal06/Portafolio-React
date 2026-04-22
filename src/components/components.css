@@ -1,6 +1,5 @@
 /* Styles Generales */
-@import 'rsuite/styles/index.less';
-@import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 body{
     background-color: rgb(30, 30, 34);
@@ -137,6 +136,10 @@ html {
 
 .place-tecnology{
     margin: 80px 0px 80px 0px;
+    color: white;
+    padding: 100px 20px;
+    clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
+    background: linear-gradient(to bottom,#2d2e309e,#111018);
 }
 
 .tecnologys{
@@ -163,6 +166,11 @@ html {
     display: grid;
     text-align: center;
     border-radius: 10px;
+    border: solid 1px rgba(209, 209, 214, 0.126);
+}
+
+.tecno:hover{
+    border: solid 1px rgba(156, 151, 0, 0.95);
 }
 
 /* Styles projects */
@@ -173,18 +181,29 @@ html {
     margin-bottom: 50px;
 }
 
+#my-projects{
+    width: 100%;
+    margin: 20px 0px 10px 0px;
+    clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
+    background: linear-gradient(to bottom, #2d2e309e, #111018);
+    padding: 100px 20px;
+}
+
 .title-projects{
     text-align: center;
-    padding: 0px 0px 30px 0px;
+    padding: 30px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .place-projects{
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    padding: 10px 0px 10px 0px;
+    padding: 10px;
     text-align: center;
     gap: 60px;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 .get-project{
@@ -209,11 +228,20 @@ html {
 
 /* Style Contact */
 
+#my-contact{
+    clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
+    background: linear-gradient(to bottom, #2d2e309e, #111018);
+    padding: 100px 20px;
+    width: 100%;
+}
+
 .place-contact{
     display: grid;
+    width: 100%;
+    max-width: 800px;
     grid-template-columns: repeat(2, 1fr);
     gap: 70px;
-    margin: 5px 0px 50px 0px;
+    margin: 0 auto;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -290,45 +318,6 @@ html {
     padding: 10px;
 }
 
-#javascript:hover{
-    color: yellow;
-}
-
-#css:hover{
-    color: rgba(34, 151, 224, 0.82);
-}
-
-#nodejs:hover{
-    color: greenyellow;
-}
-
-#mongodb:hover{
-    color: green;
-}
-
-#html:hover{
-    color: orange;
-}
-
-#react:hover{
-    color: aqua;
-}
-
-#mysql:hover{
-    color: darkkhaki;
-}
-
-#python:hover{
-    color: cadetblue;
-}
-
-#git:hover{
-    color: rgb(235, 94, 6);
-}
-
-#express:hover{
-    color: rgb(0, 0, 0);
-}
 
 .options-bar li:hover{
     background-color: rgb(102, 106, 115);
@@ -392,13 +381,16 @@ html {
     }
 
     .place-projects{
+        width: auto;
         margin: 0 auto;
+        padding: 0 10px;
     }
 
     .projects {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         justify-content: center;
+        width: auto;
     }
 
     .place-contact {
@@ -407,7 +399,8 @@ html {
         gap: 70px;
         margin: 0 auto;
         padding: 8px;
-        width: 800px;
+        width: 100%;
+        max-width: 800px;
     }
 
     .place-elements-contact {
@@ -422,8 +415,9 @@ html {
     }
 
     .place-email{
-        width: 400px;
+        width: 100%;
         margin: 0 auto;
+        padding: 20px;
     }
 }
 
@@ -452,6 +446,7 @@ html {
     .msg-contact{
         font-size: 16px;
         text-align: center;
+        margin-bottom: 10px;
     }
 
     .picture-me{
@@ -470,17 +465,48 @@ html {
     .place-contact{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-        gap: 70px;
-        margin: 5px;
-        padding: 8px;
+        gap: 30px;
+        margin: 0 auto;
+        padding: 15px;
+        width: 100%;
     }
 
     .place-projects{
         margin: 0 auto;
+        padding: 0 10px;
+        width: 100%;
+    }
+
+    .place-email{
+        width: 100%;
+        padding: 15px;
+        margin: 0 auto;
+    }
+
+    .button-contact {
+        width: 100%;
     }
 
     .title-project, .input-form, .footer-place, .place-elements-contact{
         font-size: 15px;
+    }
+
+    .input-form{
+        display: grid;
+        margin: 15px;
+        gap: 8px;
+    }
+
+    .input {
+        width: 100%;
+        padding: 8px 10px;
+        border-radius: 5px;
+    }
+
+    .get-project{
+        padding: 40px 0px 80px 0px;
+        justify-content: center;
+        text-align: center;
     }
 
     .tecno-project{
@@ -500,6 +526,12 @@ html {
         height: 50px;
     }
 
+    #my-contact {
+        width: 100%;
+        margin: 0 auto;
+        display: grid;
+    }
+
     .tecno{
         display: flex;
         flex-direction: column;
@@ -513,6 +545,11 @@ html {
         justify-content: center;
     }
 
+    .title-projects{
+        padding: 100px 0px 30px 0px;
+        font-size: 22px;
+    }
+
     .downlader-cv{
         font-size: 12px;
         height: auto;
@@ -522,5 +559,12 @@ html {
         width: 100%;
     }
 
+    .projects{
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+        margin: 0 auto;
+    }
 }
 
