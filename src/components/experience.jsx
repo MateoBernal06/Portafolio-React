@@ -1,12 +1,13 @@
 import { AlignTimeline } from "../layout/Timeline.jsx";
 import { useEffect, useState } from "react";
 import { obtenerExperiencia } from "../api/datos.js";
-import { Grid, Row, Col } from "rsuite";
+import { Loader } from "rsuite";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
 export const Experience = () => {
   const [info, setInfo] = useState([]);
+  const [loader, setLoader] = useState(true);
 
   useEffect(() => {
     AOS.init({
@@ -17,7 +18,15 @@ export const Experience = () => {
 
   useEffect(() => {
     const getExperience = async () => {
-      setInfo(await obtenerExperiencia());
+      try {
+        const data = await obtenerExperiencia();
+        setInfo(data.experiencia);
+      } catch (error) {
+        console.log(`Se produjo un error inesperado: ${error.message}`);
+        setLoader(true);
+      } finally {
+        setLoader(false);
+      }
     };
     getExperience();
   }, []);
@@ -27,7 +36,11 @@ export const Experience = () => {
       <div className="projects" id="my-experience">
         <h1 className="title-projects">Experiencia Profesional</h1>
         <div className="place-projects" data-aos="zoom-in-right">
-          <AlignTimeline exp={info} />
+          {loader ? (
+            <Loader content="Cargando datos..." vertical />
+          ) : (
+            <AlignTimeline exp={info} />
+          )}
         </div>
       </div>
     </>

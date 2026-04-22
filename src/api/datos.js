@@ -67,7 +67,7 @@ const obtenerExperiencia = async () => {
       throw Error(`Error Status ${url.status}`);
     }
     const data = await url.json();
-    return data.experiencia;
+    return data;
     
   } catch (error) {
     console.log(error);
