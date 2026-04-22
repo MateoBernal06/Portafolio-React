@@ -78,8 +78,6 @@ const obtenerExperiencia = async () => {
   }
 };
 
-obtenerExperiencia()
-
 const obetenerEstudios = async () => {
   try {
     const url = await fetch(`${import.meta.env.VITE_LINK_API}/estudios`);

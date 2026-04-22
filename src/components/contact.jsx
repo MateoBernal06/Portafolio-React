@@ -30,8 +30,8 @@ const Contact = () => {
 
     const response = await mandarMensaje(formulario);
 
-    if (!response) {
-      toast.info(response.msg, {
+    if (!response.ok) {
+      toast.error(response.msg, {
         position: "bottom-center",
         autoClose: 5000,
         hideProgressBar: false,
