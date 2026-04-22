@@ -2,8 +2,8 @@ import { Text, Timeline, Card, PanelGroup, Panel } from "rsuite";
 
 export const AlignTimeline = ({ exp }) => (
   <Timeline align="alternate" className="time-line" endless>
-    {exp.map((exp) => (
-      <Timeline.Item key={exp._id} className="item-timeline" >
+    {exp.map((exp, index) => (
+      <Timeline.Item key={index} className="item-timeline" >
         <Card className="card-exp" size="lg">
           <Card.Header>
             <Text size="lg" bold className="title-exp">
