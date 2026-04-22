@@ -1,4 +1,4 @@
-import {CarouselCertificates} from '../layout/Carousel.jsx'
+import {CarouselCertificates} from '../layout/carousel.jsx'
 
 export const Certificate = () => {
     return(
