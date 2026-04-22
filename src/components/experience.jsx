@@ -1,6 +1,6 @@
 import { AlignTimeline } from "../layout/Timeline.jsx";
 import { useEffect, useState } from "react";
-import { obtenerExperiencia } from "../api/datos.js";
+import { obtenerExperiencia } from "../api/datos";
 import { Loader } from "rsuite";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -20,6 +20,7 @@ export const Experience = () => {
     const getExperience = async () => {
       try {
         const data = await obtenerExperiencia();
+        console.log(data)
         setInfo(data.experiencia ?? []); 
       } catch (error) {
         console.log(`Se produjo un error inesperado: ${error.message}`);

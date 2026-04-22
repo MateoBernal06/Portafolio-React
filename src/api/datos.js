@@ -78,27 +78,11 @@ const obtenerExperiencia = async () => {
   }
 };
 
-const obetenerEstudios = async () => {
-  try {
-    const url = await fetch(`${import.meta.env.VITE_LINK_API}/estudios`);
-    if (!url.ok) {
-      throw Error(`Error Status ${url.status}`);
-    }
-    const data = await url.json();
-    return data;
-  } catch (error) {
-    console.log(error);
-    return {
-      ok: false,
-      msg: "Error al conectarse con el servidor",
-    };
-  }
-};
+
 
 export {
   obtenerProyectos,
   obtenerCertificados,
   mandarMensaje,
   obtenerExperiencia,
-  obetenerEstudios,
 };
