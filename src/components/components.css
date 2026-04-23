@@ -12,26 +12,28 @@ html {
 
 /* Styles de Bar */
 .bar{
-    display: flex;
+    background: linear-gradient(to bottom, #2d2e309e, #111018);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     width: 100%;
-    padding: 15px 0px 0px 0px;
+    padding: 8px 0px 8px 0px;
     position: fixed;
     top: 0;
-    height: 60px;
+    height: auto;
     z-index: 1000;
     text-align: center;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .bar-actions{
-    padding: 12px 10px 10px 10px;
-    background-color: rgba(209, 209, 214, 0.126);
+    border: solid 3px rgba(209, 209, 214, 0.126);
+    padding: 8px;
     width: 500px;
     height: auto;
     margin: 0 auto;
     display: grid;
-    border-radius: 8px;
+    border-radius: 20px;
     align-items: center;
     text-align: center;
 }
@@ -45,16 +47,35 @@ html {
 }
 
 .options-bar li {
-    padding: 5px;
     cursor: pointer;
 }
 
 .options-bar li a {
     color: white;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 17px;
 }
 
-.options-bar li:hover{
-    color: aqua;
+.options-bar li a:hover, .email-user a:hover {
+    color: rgb(241, 255, 39);
+}
+
+.email-user a {
+    color: white;
+    text-decoration: none;
+}
+
+.email-user{
+    display: flex;
+    justify-content: flex-end;
+    padding: 0px 50px 0px 0px;
+    border-radius: 50%;
+}
+
+.logo-nav{
+    width: 40px;
+    height: auto;
 }
 
 /* Styles About */
@@ -319,10 +340,6 @@ html {
 }
 
 
-.options-bar li:hover{
-    background-color: rgb(102, 106, 115);
-    border-radius: 50%;
-}
 
 
 /* Responsive */
@@ -424,7 +441,22 @@ html {
 @media (max-width: 768px) {
     
     .bar-actions{
-        width: 300px;
+        width: auto;
+    }
+
+    .options-bar{
+        display: flex;
+        justify-content: space-around;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        gap: 20px;
+    }
+
+    .bar{
+        gap: 10px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
     }
 
     .about, .tecnologys, .projects, .certificate{
@@ -485,6 +517,11 @@ html {
 
     .button-contact {
         width: 100%;
+    }
+
+    .logo-user,
+    .email-user {
+        display: none;
     }
 
     .title-project, .input-form, .footer-place, .place-elements-contact{

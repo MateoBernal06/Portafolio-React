@@ -62,6 +62,7 @@ const mandarMensaje = async (dataEmail) => {
 
 const obtenerExperiencia = async () => {
   try {
+    console.log(`${import.meta.env.VITE_LINK_API}/experiencia`);
     const url = await fetch(`${import.meta.env.VITE_LINK_API}/experiencia`);
     if (!url.ok) {
       throw Error(`Error Status ${url.status}`);
