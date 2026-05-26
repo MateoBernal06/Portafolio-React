@@ -8,6 +8,7 @@ import { FaHtml5 } from "react-icons/fa6";
 import { FaCss3Alt } from "react-icons/fa";
 import { FaReact } from "react-icons/fa6";
 import { MdOutlineFileDownload } from "react-icons/md";
+import { BsTypescript } from "react-icons/bs";
 import { FaGitAlt } from "react-icons/fa";
 import { SiExpress } from "react-icons/si";
 import { Button } from "rsuite";
@@ -70,6 +71,14 @@ export const About = () => {
           <div className="tecno">
             <FaNodeJs alt="Node.JS" className="tecno-imagen" id="nodejs" />
             <p>NodeJS</p>
+          </div>
+          <div className="tecno">
+            <BsTypescript
+              alt="TypeScript"
+              className="tecno-imagen"
+              id="typecript"
+            />
+            <p>TypeScript</p>
           </div>
           <div className="tecno">
             <SiMongodb alt="MongoBD" className="tecno-imagen" id="mongodb" />
