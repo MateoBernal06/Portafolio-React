@@ -3,7 +3,7 @@
 
 .card-projects{
     width: 100%;
-    height: 280px;
+    height: 290px;
     background-color: rgba(86, 86, 90, 0.126);
     display: grid;
     border-radius: 8px;
@@ -24,7 +24,7 @@
 .imagen-pro{
     object-fit: cover;
     border-radius: 8px 0px 0px 8px;
-    height: 280px;
+    height: 290px;
     width: 100%;
 }
 
@@ -59,7 +59,6 @@
 .button-web:hover, .button-github:hover{
     background-color: #1E293B;
     color: white;
-    border: solid 1px rgba(255, 255, 255, 0.518);
     cursor: pointer;
 }
 
@@ -72,8 +71,8 @@
 }
 
 .list-tecno{
-    justify-content: flex-start;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     list-style: none;
     left: 0;
     padding: 0;
@@ -119,7 +118,7 @@
 
 .links-project{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 .button-github, .button-web{

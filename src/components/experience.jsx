@@ -20,7 +20,6 @@ export const Experience = () => {
     const getExperience = async () => {
       try {
         const data = await obtenerExperiencia();
-        console.log(data)
         setInfo(data.experiencia ?? []); 
       } catch (error) {
         console.log(`Se produjo un error inesperado: ${error.message}`);

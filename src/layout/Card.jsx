@@ -60,8 +60,8 @@ export const CardProjects = () => {
                     className="link-github"
                   >
                     <Button
-                      color="cyan"
-                      appearance="ghost"
+                      color="blue"
+                      appearance="primary"
                       className="button-github"
                     >
                       <FaGithub size={20}></FaGithub> Codigo
@@ -74,9 +74,9 @@ export const CardProjects = () => {
                       className="link-web"
                     >
                       <Button
-                        appearance="ghost"
+                        appearance="primary"
                         className="button-web"
-                        color="cyan"
+                        color="green"
                       >
                         <TbWorld size={20}></TbWorld> Demo
                       </Button>

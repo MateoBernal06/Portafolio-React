@@ -7,8 +7,10 @@ import { SiMysql } from "react-icons/si";
 import { FaHtml5 } from "react-icons/fa6";
 import { FaCss3Alt } from "react-icons/fa";
 import { FaReact } from "react-icons/fa6";
+import { SiSupabase } from "react-icons/si";
 import { MdOutlineFileDownload } from "react-icons/md";
 import { BiLogoTypescript } from "react-icons/bi";
+import { SiSwagger } from "react-icons/si";
 import { FaGitAlt } from "react-icons/fa";
 import { SiExpress } from "react-icons/si";
 import { Button } from "rsuite";
@@ -81,12 +83,20 @@ export const About = () => {
             <p>TypeScript</p>
           </div>
           <div className="tecno">
+            <SiExpress alt="Express" className="tecno-imagen" id="express" />
+            <p>Express</p>
+          </div>
+          <div className="tecno">
             <SiMongodb alt="MongoBD" className="tecno-imagen" id="mongodb" />
             <p>MongoDB</p>
           </div>
           <div className="tecno">
             <SiMysql alt="MySQL" className="tecno-imagen" id="mysql" />
             <p>MySQL</p>
+          </div>
+          <div className="tecno">
+            <SiSupabase alt="Supabase" className="tecno-imagen" id="supabase" />
+            <p>Supabase</p>
           </div>
           <div className="tecno">
             <FaHtml5 alt="HTML" className="tecno-imagen" id="html" />
@@ -105,8 +115,8 @@ export const About = () => {
             <p>Git</p>
           </div>
           <div className="tecno">
-            <SiExpress alt="Express" className="tecno-imagen" id="express" />
-            <p>Express</p>
+            <SiSwagger alt="Swagger" className="tecno-imagen" id="swagger" />
+            <p>Swagger</p>
           </div>
         </div>
       </div>
